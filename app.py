@@ -2,8 +2,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st 
 car_data = pd.read_csv("vehicles_us.csv")
-st.header('Lanzar una moneda')
-build_histogram = st.checkbox('Proyecto 6 - Datos sobre autos') # crear un botón
+st.header('Proyecto 6 - Datos sobre autos')
+build_histogram = st.checkbox('Construir histograma') # crear un botón
         
 if build_histogram: # al hacer clic en el botón
             # escribir un mensaje
@@ -15,7 +15,7 @@ if build_histogram: # al hacer clic en el botón
         
             # mostrar un gráfico Plotly interactivo
             st.plotly_chart(fig, use_container_width=True)
-fig.update_layout(
+        fig.update_layout(
     title_text='Kilometraje de los coches en venta y su frecuencia', # title of plot
     xaxis_title_text='Odómetro', # xaxis label
     yaxis_title_text='Frecuencia', # yaxis label
