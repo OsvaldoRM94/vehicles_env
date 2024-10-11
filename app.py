@@ -15,7 +15,7 @@ if build_histogram: # al hacer clic en el botón
         
             # mostrar un gráfico Plotly interactivo
             st.plotly_chart(fig, use_container_width=True)
-        fig.update_layout(
+            fig.update_layout(
     title_text='Kilometraje de los coches en venta y su frecuencia', # title of plot
     xaxis_title_text='Odómetro', # xaxis label
     yaxis_title_text='Frecuencia', # yaxis label
