@@ -17,7 +17,7 @@ if build_histogram: # al hacer clic en el botón
 
 build_scatter = st.checkbox('Construir gráfico de dispersión') # crear un botón
      
-        if build_scatter: # al hacer clic en el botón
+if build_scatter: # al hacer clic en el botón
             # escribir un mensaje
             st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
             
